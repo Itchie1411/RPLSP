@@ -1,33 +1,34 @@
 //Finding players input
-const playerOption = function playerOption(clicked_id) {
-    playerChoice = clicked_id
-    console.log(playerChoice);
-    
-};
+
+const playerOptions = document.querySelectorAll('#player-spock', '#player-rock', '#player-paper', '#player-lizard', '#player-sci');
+
+playerOptions.addEventListener('click', function(){
+    console.log(pChoice)
+});
 
 
-// Getting a random selection of options by the PC:
-computerChoice = addEventListener('click', computerChoice);
+// Getting a random selection by the PC:
+// PC choice
 // const pcOptions = ['spock', 'rock', 'paper', 'lizard', 'sci'];
 const pcOptions = ['spock'];
+const computerChoice = addEventListener('click', function () {
 
-function computerChoice() {
     const pcNumber = Math.floor(Math.random());
-    const pcChoice = pcOptions[pcNumber]
-    // Console out PC choice
+    const pcChoice = pcOptions[pcNumber];
+    //console logging PCs choice
     console.log(pcChoice)
-    return;
-}
+    return pcChoice;
+});
 
 
 //adding winning conditions
 function winners (playerOption, computerChoice) {
-    if(playerOption == computerChoice) {
+    if(playerOption === computerChoice) {
             console.log('draw!');
             return;
         }
 
 }
-playerOption();
-
+playerOptions();
+computerChoice();
 winners();
