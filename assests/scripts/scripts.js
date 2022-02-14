@@ -1,35 +1,18 @@
-//Finding players input
+// Finding buttons for player
+const playerOptions = document.querySelectorAll('.player-gamebtn');
+// PC buttons
+const gameOptions = document.querySelectorAll('.gamebtn');
 
-const playerOptions = document.querySelectorAll('.plyerbtn');
-
+// Loop to get all of the player button classes and find the selection with when clicked
 for (let i = 0; i < playerOptions.length; i++) {
-  playerOptions[i].addEventListener('click', function(){
+  playerOptions[i].addEventListener('click', function () {
     console.log(this.innerText);
+
+    // Getting a random selection by the PC:
+    // PC will pci k1
+    const pcChoice = Math.floor(Math.random() * gameOptions.length)
+    let pcPick = pcChoice.toString();
+    console.log(pcPick);
   });
-}
 
-
-// Getting a random selection by the PC:
-// PC choice
-//const pcOptions = ['spock', 'rock', 'paper', 'lizard', 'sci'];
-const pcOptions = ['spock'];
-const computerChoice = addEventListener('click', function () {
-
-    const pcNumber = Math.floor(Math.random());
-    const pcChoice = pcOptions[pcNumber];
-    //console logging PCs choice
-    console.log(pcChoice)
-    return pcChoice;
-});
-
-
-// //adding winning conditions
-// function winners (playerOption, computerChoice) {
-//     if(playerOption === computerChoice) {
-//             console.log('draw!');
-//             return;
-//         }
-
-// }
-// playerOptions();
-
+};
