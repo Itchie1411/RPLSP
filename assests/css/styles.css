@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
-    
+
     background-image: url(/assests/images/bg-space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-} 
+}
 
 nav ul {
     display: flex;
     width: 30rem;
     list-style: none;
-    column-gap: 5rem ;
+    column-gap: 5rem;
     margin-left: 44rem;
 }
 
 nav li {
     width: 6rem;
-    
 }
 
 .game-container {
@@ -29,13 +28,25 @@ nav li {
 }
 
 .player-selection {
-	width: 41rem;
-	margin-left: auto;
-	margin-right: auto;
-	column-gap: 10px;
-	display: flex;
+    width: 41rem;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    display: flex;
     margin-top: 5rem;
     text-align: center;
+}
+
+.player-selection .plyerbtn {
+    font-size: 0;
+}
+
+.player-gamebtn {
+    font-size: 0;
+}
+
+.gamebtn {
+    font-size: 0;
 }
 
 .player-selection img {
@@ -43,23 +54,23 @@ nav li {
     scale: 1;
 }
 
-.player-selection img:hover{
+.player-selection img:hover {
     scale: 1.1;
 }
 
 .computer-selection {
     width: 41rem;
-	margin-left: auto;
-	margin-right: auto;
-	column-gap: 10px;
-	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    display: flex;
 }
 
 .computer-selection img {
     width: 8rem;
 }
 
-.player-score{
+.player-score {
     text-align: center;
     margin-top: 2.5rem;
     font-size: 30px;
@@ -67,42 +78,49 @@ nav li {
 }
 
 .vs {
-        text-align: center;
-        margin-top: 8rem;
-        font-size: 30px;
-        color: yellowgreen;
-}
-
-.pc-score{
     text-align: center;
     margin-top: 8rem;
     font-size: 30px;
     color: yellowgreen;
 }
 
-.button {
+.pc-score {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+.button-nav {
     cursor: pointer;
     width: 100px;
-    top:50%;
-    background-color:#1eff00;
+    top: 50%;
+    background-color: #1eff00;
     color: rgb(132, 0, 255);
-    border:none;
-    border-radius:10px;
-    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
     padding: .35rem .55rem;
 }
+
+.button-nav:hover {
+    background-color: #555555;
+    color: white
+}
+
+
 
 
 .rules h2 {
     font-family: Poppins;
     font-size: 95px;
     text-transform: uppercase;
-    font-weight:bolder;
+    font-weight: bolder;
     text-align: center;
     color: rgb(28, 167, 1);
 }
 
-.rules p{
+.rules p {
     font-size: 32px;
     width: 60rem;
     margin-right: auto;
@@ -110,6 +128,7 @@ nav li {
     color: rgb(4, 128, 0);
     margin-top: 6rem;
 }
+
 .rules ul {
     font-size: 32px;
     width: 20rem;
