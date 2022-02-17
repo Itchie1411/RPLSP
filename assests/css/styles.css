@@ -84,6 +84,19 @@ nav li {
     color: yellowgreen;
 }
 
+.player-winner {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: yellowgreen;
+}
+.pc-winner {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: yellowgreen;
+}
+
 .pc-score {
     text-align: center;
     margin-top: 8rem;
