@@ -19,15 +19,13 @@ let playerWinner = document.querySelector('.player-winner');
 let pcWinner = document.querySelector('.pc-score');
 
 //finding player + PC choices to display what has been selected
-
 let playerChoice = document.querySelector('.playerChoice');
 let pcChoice = document.querySelector('.pcChoice');
 
-// finding score elements to add points 
-
+// finding score elements to add points
 // Finding button
 const playerOptions = document.querySelectorAll(".player-gamebtn");
-// // Loop to get all of the player button classes and find the selection with when clicked
+// // Loop function to get all of the player button classes and find the selection with when clicked
 
 function generateBotOption() {
   const pcPick = document.getElementsByClassName("bot-gamebtn");
@@ -47,7 +45,7 @@ function bindUserInput() {
       // Bot option
       generateBotOption();
       pcChoice.textContent = 'Bot chose : ' + botChoice
-    
+
       // Winners
       winCondtion()
 
@@ -57,36 +55,82 @@ function bindUserInput() {
   }
 }
 
-function winCondtion(){
-  if(userChoice === botChoice){
-    playerWinner.textContent = 'It is a draw!'
+function winCondtion() {
+  if (userChoice === botChoice) {
+    playerWinner.textContent = 'It is a draw!';
     return;
-  };
-
-  if(userChoice === 'rock'){
-    if (botChoice === 'sci') {
-      playerWinner.textContent = 'You win!!'
+  }
+  //// Checking Spock conditions
+  if (userChoice === 'spock') {
+    if ((botChoice == 'rock') || (botChoice == 'scissors')) {
+      playerWinner.textContent = 'You win!!';
       playerScore++;
+      updateScore();
       return;
     } else {
-      pcScore.textContent = 'The PC wins'
-      botChoice++;
+      playerWinner.textContent = 'The PC wins';
+      pcScore++;
+      updateScore();
       return;
     }
-  };
+  } 
 
-  if(userChoice === 'sci'){
-    if (botChoice === 'paper') {
-      playerWinner.textContent = 'You win!!'
+  if (userChoice === 'rock') {
+    if ((botChoice == 'scissors') || (botChoice == 'lizard')) {
+      playerWinner.textContent = 'You win!!';
       playerScore++;
+      updateScore();
       return;
     } else {
-      pcScore.textContent = 'The PC wins'
-      botChoice++;
+      playerWinner.textContent = 'The PC wins';
+      pcScore++;
+      updateScore();
       return;
     }
-  };
+  } 
+
+  if (userChoice === 'paper') {
+    if ((botChoice == 'spock') || (botChoice == 'rock')) {
+      playerWinner.textContent = 'You win!!';
+      playerScore++;
+      updateScore();
+      return;
+    } else {
+      playerWinner.textContent = 'The PC wins';
+      pcScore++;
+      updateScore();
+      return;
+    }
+  } 
+
+  if (userChoice === 'lizard') {
+    if ((botChoice == 'spock') || (botChoice == 'paper')) {
+      playerWinner.textContent = 'You win!!';
+      playerScore++;
+      updateScore();
+      return;
+    } else {
+      playerWinner.textContent = 'The PC wins';
+      pcScore++;
+      updateScore();
+      return;
+    }
+  } 
+
+  if (userChoice === 'scissors') {
+    if ((botChoice == 'paper') || (botChoice == 'lizard')) {
+      playerWinner.textContent = 'You win!!';
+      playerScore++;
+      updateScore();
+      return;
+    } else {
+      playerWinner.textContent = 'The PC wins';
+      pcScore++;
+      updateScore();
+      return;
+    }
+  } 
+
 };
-
 
 window.addEventListener('load', bindUserInput);

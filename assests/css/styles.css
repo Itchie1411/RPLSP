@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
-
     background-image: url(/assests/images/bg-space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +16,21 @@ nav ul {
 
 nav li {
     width: 6rem;
+}
+
+.howTo-button-nav {
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    width: 100px;
+    top: 50%;
+    background-color: #1eff00;
+    color: rgb(132, 0, 255);
+    border: none;
+    border-radius: 10px;
+    padding: .35rem .55rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
 }
 
 .game-container {
@@ -188,15 +202,21 @@ nav li {
     margin-top: 6rem;
 }
 
-/* @media screen and (min-width: 315px ) {
-    .player-selection, .computer-selection {
+@media screen and (min-width: 375px) {
+
+    body { 
+        width: 375px;
+        height: 812px;
+    }
+
+    .player-selection {
         display: grid;
-        justify-items: start;
-        width: 9rem;
-        margin-right: 50rem;
-    };
-    
-    */
+        margin-left: 0px;
+        width: 3rem;
+        margin-left: 1rem;
+    }
 
-
-};
+    .player-selection img {
+        width: 5rem;
+    }
+}
