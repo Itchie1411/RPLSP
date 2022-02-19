@@ -18,6 +18,11 @@ const updateScore = () => {
 let playerWinner = document.querySelector('.player-winner');
 let pcWinner = document.querySelector('.pc-score');
 
+//finding player + PC choices to display what has been selected
+
+let playerChoice = document.querySelector('.playerChoice');
+let pcChoice = document.querySelector('.pcChoice');
+
 // finding score elements to add points 
 
 // Finding button
@@ -37,9 +42,11 @@ function bindUserInput() {
       const playerPick = this.innerText;
       console.log(playerPick);
       userChoice = playerPick;
+      playerChoice.textContent = 'You chose : ' + userChoice;
 
       // Bot option
       generateBotOption();
+      pcChoice.textContent = 'Bot chose : ' + botChoice
     
       // Winners
       winCondtion()
@@ -54,7 +61,8 @@ function winCondtion(){
   if(userChoice === botChoice){
     playerWinner.textContent = 'It is a draw!'
     return;
-  }
+  };
+
   if(userChoice === 'rock'){
     if (botChoice === 'sci') {
       playerWinner.textContent = 'You win!!'
@@ -62,8 +70,22 @@ function winCondtion(){
       return;
     } else {
       pcScore.textContent = 'The PC wins'
+      botChoice++;
+      return;
     }
-  }
+  };
+
+  if(userChoice === 'sci'){
+    if (botChoice === 'paper') {
+      playerWinner.textContent = 'You win!!'
+      playerScore++;
+      return;
+    } else {
+      pcScore.textContent = 'The PC wins'
+      botChoice++;
+      return;
+    }
+  };
 };
 
 

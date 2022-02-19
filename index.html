@@ -15,8 +15,7 @@
     <nav class='nav-bar'>
     <ul>
         <li><button class='button-nav' onclick="location.href='how-to-play.html'"></html>How to Play</button></li>
-        <li><button class='button-nav' onclick='#'>Reset</button></li>
-        <li><button class='button-nav'>Button 3</button></li>
+        <li><button class='button-nav' id='reloadPage' onclick="window.location.reload();">Reset</button></li>
     </ul>
     </nav>
 </section>
@@ -29,12 +28,15 @@
             <button class = 'player-gamebtn' id='player-lizard'><img src="/assests/images/lazard1.png" alt="lizard-player">lizard</button>
             <button class = 'player-gamebtn' id='player-sci'><img src="/assests/images/sci1.png" alt="sci-player">sci</button>
         </div>
-        
+        <!--element to control all center items, scores and button choices-->
+        <section class="scoreChoices">
         <div class="player-score">
+            <p class="playerChoice">
+                
+            </p>
             <h3>
                0
             </h3>
-            <!-- ADD PLAYER CHOICE HERE-->
         </div>
 
         <div class="player-winner">
@@ -49,11 +51,14 @@
             <h3>
                 0
             </h3>
-            <!-- ADD pc CHOICE HERE-->
+            <p class="pcChoice">
+                
+            </p>
         </div>
         <div class="pc-winner">
 
         </div>
+    </section>
 
         <div class="computer-selection">
             <button class='bot-gamebtn' id='spock'><img src="/assests/images/spock1.png" alt="spock-computer">spock</button>
