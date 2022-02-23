@@ -51,6 +51,7 @@ function bindUserInput() {
 
       // updating scores
       updateScore();
+
     });
   }
 }
@@ -131,6 +132,12 @@ function winCondtion() {
     }
   } 
 
+
+
+
+
 };
+
+
 
 window.addEventListener('load', bindUserInput);

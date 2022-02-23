@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+html {
+  overflow:hidden;
+}
+
+
 body {
     background-image: url(/assests/images/bg-space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
-nav ul {
-    display: flex;
-    width: 30rem;
-    list-style: none;
-    column-gap: 5rem;
-    margin-left: 45rem;
+ul {
+  display: flex;
+  font-size: 3px;
+  letter-spacing: 0px;
+  column-gap: 2rem;
 }
 
-nav li {
-    width: 6rem;
-}
+
 
 .howTo-button-nav {
     margin-right: auto;
@@ -202,21 +205,175 @@ nav li {
     margin-top: 6rem;
 }
 
-@media screen and (min-width: 375px) {
+/* MEDIA QUERIES */
+
+
+
+@media screen and (min-width: 412px) {
 
     body { 
-        width: 375px;
-        height: 812px;
+        width: 412px;
+        height: 915px;
+        
     }
 
+    ul {
+        display: flex;
+        font-size: 3px;
+        letter-spacing: 0px;
+        column-gap: 2rem;
+        margin-left: 2rem;
+        padding-top: 2rem;
+      }
+
+    .game-container {
+        display: flex;
+        padding-top: 5rem;
+        height: 60%
+    }
+
+
     .player-selection {
-        display: grid;
+        display: inline-flex;
+        flex-direction: column;
         margin-left: 0px;
-        width: 3rem;
+        width: 6rem;
+        height: 51%;
         margin-left: 1rem;
+        column-gap: 1px;
+        margin-top: 0;
+    }
+
+    .computer-selection {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 6rem;
+        height: 51%;
+        column-gap: 1px;
+        margin: 0;
+        margin-right: 42rem;
+        padding-left: 2rem;
     }
 
     .player-selection img {
         width: 5rem;
     }
+
+    .computer-selection img {
+        width: 5rem;
+    }
+
+    .scoreChoices {
+        width: 12rem;
+        margin-top: .5rem;
+        height: 60%
+    }
+
+    div.player-winner {
+        padding-top: 24px;
+    }
+
+    .scoreChoices p {
+        margin: 0px;
+        width: 8.8rem;
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-top: 6px;
+        
+    }
+
+    .scoreChoices h3, .player-winner {
+        margin: 0px;
+        width: 8.8rem;
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-top: 8px;
+        
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+
+    body { 
+        width: 375px;
+        height: 812px;
+        
+    }
+
+    ul {
+        display: flex;
+        font-size: 3px;
+        letter-spacing: 0px;
+        column-gap: 2rem;
+        margin-left: 2rem;
+        padding-top: 2rem;
+      }
+
+    .game-container {
+        display: flex;
+        padding-top: 5rem;
+        height: 60%
+    }
+
+
+    .player-selection {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 6rem;
+        height: 51%;
+        margin-left: 1rem;
+        column-gap: 1px;
+        margin-top: 0;
+    }
+
+    .computer-selection {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 6rem;
+        height: 51%;
+        column-gap: 1px;
+        margin: 0;
+        margin-right: 42rem;
+    }
+
+    .player-selection img {
+        width: 5rem;
+    }
+
+    .computer-selection img {
+        width: 5rem;
+    }
+
+    .scoreChoices {
+        width: 12rem;
+        margin-top: .5rem;
+        height: 60%
+    }
+
+    div.player-winner {
+        padding-top: 24px;
+    }
+
+    .scoreChoices p {
+        margin: 0px;
+        width: 8rem;
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-top: 6px;
+        
+    }
+
+    .scoreChoices h3, .player-winner {
+        margin: 0px;
+        width: 8rem;
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-top: 8px;
+        
+    }
+
 }
