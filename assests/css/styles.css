@@ -544,6 +544,173 @@ p {
 
 }
 
+@media only screen and (min-device-width: 428px) {
+    html {
+        height: 100vh;
+        overflow: scroll;
+
+    }
+
+    section.scoreChoices {
+        width: 0rem;
+        height: 61%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        width: 14rem;
+    }
+
+    .game-container {
+        display: flex;
+        padding-top: 5rem;
+        height: 60%;
+        width: 1rem;
+        padding-left: 0rem;
+        margin-left: 0rem;
+
+    }
+
+
+    .player-selection {
+        display: grid;
+        grid-auto-flow: row;
+        width: 6rem;
+        height: 51%;
+        column-gap: 10px;
+        padding: 0px;
+        margin-left: .1rem;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .player-selection img {
+        width: 5rem;
+
+    }
+
+    .computer-selection {
+        display: grid;
+        grid-auto-flow: row;
+        width: 6rem;
+        height: 51%;
+        column-gap: 1px;
+        padding: 0px;
+        margin-left: 14.5rem;
+        margin-top: 0;
+    }
+
+    .computer-selection img {
+        width: 5rem;
+    }
+
+    .scoreChoices h3 {
+        margin-left: 0;
+        justify-content: left;
+
+    }
+
+    .playerChoice {
+        text-align: center;
+        font-size: 25px;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 4rem;
+        width: 9rem;
+        padding-left: 2.5rem;
+    }
+
+    p.playerChoice {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 4rem;
+        width: 8rem;
+        padding-left: 1rem;
+    }
+
+
+    .player-score {
+        display: grid;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        margin-top: 0;
+    }
+
+    .player-score h3 {
+        margin-left: 4rem;
+        justify-content: left;
+        width: 10rem;
+        margin-bottom: 0;
+        padding-left: 1.5rem;
+    }
+
+
+    .vs p {
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 4rem;
+        width: 12rem;
+    }
+
+    .player-winner {
+        text-align: center;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 4rem;
+        width: 10rem;
+        padding-left: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .pcChoice {
+        text-align: center;
+        font-size: 25px;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin: 0px;
+        padding-right: 4rem;
+        width: 9rem;
+        padding-left: 2.5rem;
+    }
+
+    .pc-score {
+        text-align: center;
+        margin: 0px;
+        padding-right: 4rem;
+        width: 8rem;
+        padding-left: 6.5rem;
+        padding-top: 2rem;
+    }
+
+    .rules h2 {
+
+        font-size: 60px;
+        margin-bottom: 5rem;
+    }
+
+    .rules p {
+        font-size: 25px;
+        width: 20rem;
+        margin-top: 0;
+    }
+
+    .hotToPlay ul {
+        display: grid;
+        font-size: 25px;
+        margin-top: 2.5rem;
+    }
+
+}
+
 /* Iphone and andriod sizes */
 @media only screen and (min-device-width: 375px) and (max-device-width: 412px) {
     html {
