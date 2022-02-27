@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class='nav-bar'>
+    <nav class='nav-bar' id='nav'>
         <ul>
             <li><button class='button-nav' onclick="location.href='how-to-play.html'">
 
@@ -22,7 +22,7 @@
 </nav>
 
 <section class="game-container">
-    <div class="player-selection">
+    <div class="player-selection" id="plyrBtns">
         <button class='player-gamebtn' id='player-spock'><img src="/assests/images/spock1.png"
                 alt="spock-player">spock</button>
         <button class='player-gamebtn' id='player-rock'><img src="/assests/images/rock1.png"
@@ -33,12 +33,15 @@
                 alt="lizard-player">lizard</button>
         <button class='player-gamebtn' id='player-sci'><img src="/assests/images/sci1.png"
                 alt="sci-player">scissors</button>
+
+
     </div>
     <section class="scoreChoices">
-        <div class="player-score">
-            <p class="playerChoice">
-
+        <div class="playerChoice">
+            <p>
             </p>
+        </div>
+        <div class="player-score">
             <h3>
                 0
             </h3>
@@ -56,14 +59,15 @@
             <h3>
                 0
             </h3>
-            <p class="pcChoice">
-
+        </div>
+        <div class="pcChoice">
+            <p>
             </p>
         </div>
-        <div class="pc-winner">
 
+        <div class="pc-winner">
         </div>
-        </div>
+
     </section>
 
     <div class="computer-selection">
