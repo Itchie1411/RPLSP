@@ -307,15 +307,24 @@ p {
         width: 42rem;
     }
 
-    .scoreChoices {
-        margin-left: 9rem;
+    .player-selection,
+    .computer-selection {
+        margin-right: 18rem;
+
+    }
+
+    .player-score h3,
+    .player-winner,
+    .vs p,
+    .pc-score h3 {
+        margin-left: 1rem;
     }
 
     div.playerChoice {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        margin-right: 25rem;
+        margin-right: 15rem;
         margin-top: 2rem;
     }
 
@@ -324,7 +333,8 @@ p {
         justify-content: center;
         font-size: 30px;
         margin-top: 2rem;
-        margin-right: 25rem;
+        margin-bottom: 2rem;
+        margin-right: 15rem;
     }
 
     .player-score h3,
@@ -335,7 +345,8 @@ p {
         margin-right: 0;
     }
 
-    .player-winner, .vs p {
+    .player-winner,
+    .vs p {
         display: flex;
         flex-direction: row;
         margin-left: 10rem;
@@ -387,15 +398,19 @@ p {
         width: 42rem;
     }
 
-    .scoreChoices {
-        margin-left: 9rem;
+
+    .player-score h3,
+    .player-winner,
+    .vs p,
+    .pc-score h3 {
+        margin-left: 1rem;
     }
 
     div.playerChoice {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        margin-right: 25rem;
+
         margin-top: 2rem;
     }
 
@@ -404,7 +419,23 @@ p {
         justify-content: center;
         font-size: 30px;
         margin-top: 2rem;
-        margin-right: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    div.playerChoice {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-right: 15rem;
+        margin-top: 2rem;
+    }
+
+    div.pcChoice {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-right: 15rem;
     }
 
     .player-score h3,
@@ -415,7 +446,8 @@ p {
         margin-right: 0;
     }
 
-    .player-winner, .vs p {
+    .player-winner,
+    .vs p {
         display: flex;
         flex-direction: row;
         margin-left: 10rem;
@@ -477,7 +509,8 @@ p {
         margin-left: 2rem;
     }
 
-    div.playerChoice, div.pcChoice {
+    div.playerChoice,
+    div.pcChoice {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -544,7 +577,7 @@ p {
 
 }
 
-@media only screen and (min-device-width: 428px) {
+@media only screen and (max-device-width: 428px) {
     html {
         height: 100vh;
         overflow: scroll;
