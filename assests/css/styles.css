@@ -208,7 +208,7 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 810px) {
+/* @media screen and (min-width: 834px) {
 
     body {
         width: 834px;
@@ -286,7 +286,7 @@ p {
     }
 
 
-}
+} */
 
 /* Ipad PRO screensize */
 @media only screen and (max-device-width: 834px) {
