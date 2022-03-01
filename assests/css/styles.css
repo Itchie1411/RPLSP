@@ -16,6 +16,7 @@ ul {
     font-size: 3px;
     letter-spacing: 0px;
     column-gap: 2rem;
+    padding-left: 40rem;
 }
 
 .howTo-button-nav {
@@ -34,10 +35,7 @@ ul {
 }
 
 .game-container {
-    width: 1000px;
     height: 800px;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 3rem;
 }
 
@@ -199,6 +197,10 @@ p {
 }
 
 .rules ul {
+    display: flex;
+  flex-direction: column;
+  padding-left: 16rem;
+  padding: 0px;
     font-size: 32px;
     width: 20rem;
     margin-right: auto;
@@ -207,8 +209,17 @@ p {
     margin-top: 6rem;
 }
 
+.nav-barHowTo ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 40rem;
+    padding-top: 1rem;
+}
+
 /* MEDIA QUERIES */
-@media screen and (min-width: 1920px) {
+
+@media screen and (min-width: 1600px) {
 
     html {
         height: 100vh;
@@ -216,12 +227,12 @@ p {
 
     }
 
-    .nav-bar {
+    .nav-bar ul {
         display: flex;
         justify-content: center;
-        padding-top: 2rem;
+        padding-top: 0;
         width: 50rem;
-        margin-left: 25rem;
+        margin-left: 15.5rem;
     }
 
     .button-nav {
@@ -235,7 +246,22 @@ p {
         border: none;
         border-radius: 100px;
         padding: .99rem .99rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+
+    .howTo-button-nav {
+        margin-right: auto;
+        margin-left: auto;
+        cursor: pointer;
+        width: 150px;
+        top: 50%;
+        background-color: #1eff00;
+        color: rgb(132, 0, 255);
+        border: none;
+        border-radius: 100px;
+        padding: .99rem .99rem;
+        margin-top: 1rem;
         font-size: 15px;
     }
 
@@ -243,8 +269,9 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding-top: 2rem;
-        padding-left: 10rem;
+        padding-left: 1rem;
+        margin-left: 15rem;
+        margin-top: 3rem;
         flex-direction: column;
         align-items: center;
     }
@@ -262,7 +289,6 @@ p {
         margin-right: 18rem;
         margin-left: 20rem;
         padding-top: 2rem;
-
     }
 
     .computer-selection {
@@ -358,8 +384,8 @@ p {
         display: flex;
         justify-content: center;
         padding-top: 2rem;
-        width: 50rem;
-        margin-left: 15rem;
+        width: 40rem;
+        margin-left: 0;
     }
 
     .game-container {
@@ -475,10 +501,10 @@ p {
         display: flex;
         justify-content: center;
         padding-top: 1.5rem;
+        margin-right: 25rem;
     }
 
     .game-container {
-        margin-bottom: 0;
         flex-direction: row;
         padding: 0px;
         padding-left: 1rem;
@@ -543,7 +569,6 @@ p {
         margin: 0px;
         margin-left: 18.5rem;
         margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 
     .rules {
@@ -596,17 +621,18 @@ p {
 
     ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        font-size: 3px;
-        letter-spacing: 0px;
-        column-gap: 2rem;
-        padding-top: 2rem;
-        width: 42rem;
+        width: 14rem;
+        padding-left: 16.5rem;
+        margin-top: 2rem;
     }
+
+  
 
     .player-selection,
     .computer-selection {
-        margin-right: 18rem;
+        margin-right: 8rem;
 
     }
 
@@ -621,7 +647,7 @@ p {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        margin-right: 15rem;
+        margin-right: 0;
         margin-top: 2rem;
     }
 
@@ -631,7 +657,7 @@ p {
         font-size: 30px;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        margin-right: 15rem;
+        margin-right: 0;
     }
 
     .player-score h3,
@@ -672,11 +698,14 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-right: 20rem;
+        width: 14rem;
+        padding-left: 18.5rem;
+        margin-top: 2rem;
     }
 
 }
 
+/* ipad */
 @media only screen and (max-device-width: 810px) {
 
     html {
@@ -687,12 +716,10 @@ p {
 
     ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        font-size: 3px;
-        letter-spacing: 0px;
-        column-gap: 2rem;
-        padding-top: 2rem;
-        width: 42rem;
+        width: 14rem;
+        padding-left: 18.5rem;
     }
 
 
@@ -703,11 +730,14 @@ p {
         margin-left: 1rem;
     }
 
+    .player-selection, .computer-selection {
+        margin-right: 6rem;
+    }
+
     div.playerChoice {
         display: flex;
         justify-content: center;
         font-size: 30px;
-
         margin-top: 2rem;
     }
 
@@ -715,6 +745,7 @@ p {
         display: flex;
         justify-content: center;
         font-size: 30px;
+        margin-right: 0;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
@@ -723,16 +754,8 @@ p {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        margin-right: 15rem;
+        margin-right: 0;
         margin-top: 2rem;
-    }
-
-    div.pcChoice {
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        margin-top: 2rem;
-        margin-right: 15rem;
     }
 
     .player-score h3,
@@ -773,7 +796,8 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-right: 20rem;
+        width: 14rem;
+        padding-left: 15.5rem;
     }
 
 }
@@ -789,12 +813,10 @@ p {
 
     ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        font-size: 3px;
-        letter-spacing: 0px;
-        column-gap: 2rem;
-        margin-left: 2rem;
-        padding-top: 2rem;
+        width: 14rem;
+        padding-left: 16.5rem;
     }
 
     .scoreChoices {
@@ -813,7 +835,7 @@ p {
         justify-content: center;
         font-size: 30px;
         margin-top: 2rem;
-        margin-right: 15rem;
+        margin-right: 0;
     }
 
     .pcChoice {
@@ -888,8 +910,10 @@ p {
 
     ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        width: 18rem;
+        width: 14rem;
+        padding-left: 5.5rem;
     }
 
     .game-container {
@@ -1026,6 +1050,14 @@ p {
         margin-top: 2.5rem;
     }
 
+    .nav-barHowTo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 14rem;
+        padding-left: 11rem;
+    }
+
 }
 
 /* Iphone and andriod sizes */
@@ -1041,10 +1073,13 @@ p {
         height: 61%;
     }
 
-    ul {
+   ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         width: 14rem;
+        padding-left: 5rem;
+
     }
 
     .game-container {
@@ -1179,6 +1214,15 @@ p {
         display: grid;
         font-size: 25px;
         margin-top: 2.5rem;
+    }
+
+    .nav-barHowTo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 14rem;
+        padding-left: 10rem;
+
     }
 
 }

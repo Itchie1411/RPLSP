@@ -52,7 +52,19 @@ function bindUserInput() {
       // updating scores
       updateScore();
 
+      winnerAlert();
+
     });
+  }
+}
+
+function winnerAlert (){
+  if (playerScore === 10) {
+    alert('You beat the bot! Congrats! Click OK to play again');
+    window.location.reload();
+  } if(pcScore == 10) {
+    alert('The bot has won, try beat it!');
+    window.location.reload();
   }
 }
 
@@ -131,7 +143,6 @@ function winCondtion() {
       return;
     }
   } 
-
 
 
 
