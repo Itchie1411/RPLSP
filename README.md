@@ -9,6 +9,7 @@ Live version [_here_](https://itchie1411.github.io/RPLSP/)
 <li> Design </li>
 <li> Pages </li>
 <li> Testing and pain points</li>
+<li>Deployment</li>
 
 <hr>
 
@@ -22,19 +23,41 @@ There is a maximum of 10 points to win, either the player (You) or the bot will 
 <br>
 <hr>
 <h2>Design</h2>
-The design of my project is very simple. I decisioned that for bigger monitors such as desktop / laptop that the icons for the game are to be spread across the screen to make it visually more appealing. While for mobile and tablet devices it is the opposite - the icons will be displayed vertically. 
+The design of my project is very simple. I decided that for bigger monitors such as desktop / laptop that the icons for the game are to be spread across the screen to make it visually more appealing. While for mobile and tablet devices it is the opposite - the icons will be displayed vertically. 
 
 The design of the icons to which the player selects as their choice where found by googling for references to the game, to which <a href='https://pngset.com/images/rock-paper-scissors-lizard-spock-is-a-funny-extension-clipart-rock-paper-scissors-network-hand-sphere-word-transparent-png-318140.png'>this image was found.</a>
 I simply sliced each icon images from this newly found picture to give myself the follow: <br><br>
 Rock: <br>
-<img src="assets/images/rock1.png" width="100">
+
+<img src="assests/images/rock.jpg" width="100"> <br>
+
+Paper: <br>
+
+<img src="assests/images/paper.jpg" width="100"> <br>
+
+Lizard: <br>
+
+<img src="assests/images/lizard.jpg" width="100"> <br>
+
+Scissors: <br>
+
+<img src="assests/images/sci.jpg" width="100"> <br>
+
+Spock: <br>
+
+<img src="assests/images/spock.jpg" width="100"> <br>
+
+<br><br>
+Using Photoshop, I was able to remove the background of these images and have them transparent rather than doing this in CSS.  <br> <br>
+
+Both player and bot got the same styles applied. However, only on the players choices the images increased in size when they're been selected or hovered on. This feature desgin was put in, so the player would know their own side of the game. Once a choice is made, new onscreen text will appear and  state the follow information for the player that what their choice was, the bots choice and who won. <br> <br>
 
 
 
-I created a very simple wiregrapic for both veritcle and horozontal views. 
 
 <h3>Desktop view</h3>
-<img src="images/wireframe1.JPG" width="600" />
+I created a very simple wiregrapic for both veritcle and horozontal views. 
+<img src="assests/images/wireframe1.JPG" width="600">
 <hr>
 
 <h3>Tablet and phone views</h3>
@@ -72,6 +95,17 @@ Carried out on all pages of the website using the HTML validator <a href='https:
 Carried out also, using the <a href='https://jigsaw.w3.org/css-validator/'> Jigsaw CSS validator</a>
 <br> <hr>
 
+
+<h2> Deployment
+<a href='#deployment'>
+</h2> </a>
+The front end website will be deployed and hosted via the GitHub platform. 
+<ol>
+<li>Github repository of files:</li>
+<ul> <a href=https://github.com/Itchie1411/RPLSP>https://github.com/Itchie1411/RPLSP</a></ul>
+<li>Live Site</li>
+<ul> <a href=https://itchie1411.github.io/RPLSP/>https://itchie1411.github.io/RPLSP/</a></ul>
+</ol> 
 
 
 
