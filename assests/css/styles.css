@@ -218,72 +218,23 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 1920px) {
-    ul {
+@media screen and (min-width: 2540px) {
+    .nav-bar {
         display: flex;
         font-size: 3px;
         letter-spacing: 0px;
         column-gap: 2rem;
-        padding-left: 40rem;
+        padding-left: 18rem;
     }
 
-    .player-selection {
-        display: grid;
-        grid-auto-flow: column;
-        width: 42.5rem;
-        margin-right: 18rem;
-        margin-left: 20rem;
-        padding-top: 2rem;
-    }
-
-    .computer-selection {
-        display: grid;
-        grid-auto-flow: column;
-        width: 42.5rem;
-        margin-right: 18rem;
-        margin-left: 20rem;
-        padding-top: 2rem;
-    }
-
-    .scoreChoices p {
-        width: 8.8rem;
-        font-size: 25px;
-        padding-left: 1rem;
-        padding-top: 6px;
-
-    }
-
-    .scoreChoices h3,
-    .player-winner {
-        width: 8.8rem;
-        font-size: 25px;
-        padding-left: 1rem;
-        padding-top: 3px;
-
-    }
-
-
-    .playerChoice,
-    .pcChoice {
-        font-size: 30px;
-        width: 18rem;
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
-        margin-left: 18.5rem;
-        margin-top: 1rem;
-    }
-
-    .nav-barHowTo ul {
+    .nav-barHowTo {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-right: 10rem;
+        margin-right: 11rem;
+        padding-top: 1rem;
     }
 
-    .hotToPlay li {
-        font-size: 30px;
-    }
 
 }
 
