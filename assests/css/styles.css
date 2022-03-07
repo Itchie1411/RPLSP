@@ -213,7 +213,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-right: 40rem;
+    padding-left: 50rem;
     padding-top: 1rem;
 }
 
@@ -272,6 +272,17 @@ p {
         margin: 0px;
         margin-left: 18.5rem;
         margin-top: 1rem;
+    }
+
+    .nav-barHowTo ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 10rem;
+    }
+
+    .hotToPlay li {
+        font-size: 30px;
     }
 
 }
@@ -533,11 +544,12 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-right: 20rem;
+        padding-left: 25rem;
+        padding-top: 1rem;
     }
 
 
@@ -655,12 +667,12 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        padding-top: 2rem;
-        padding-left: 20rem;
-        margin-right: 60rem;
+        padding-left: 18rem;
+        padding-top: 1rem;
     }
 
 
@@ -750,12 +762,12 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 14rem;
-        padding-left: 28.5rem;
+        padding-left: 17rem;
+        padding-top: 1rem;
     }
 
 }
@@ -847,12 +859,12 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 14rem;
-        padding-left: 26.5rem;
+        padding-left: 16rem;
+        padding-top: 1rem;
     }
 
 }
@@ -940,11 +952,12 @@ p {
     }
 
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-right: 9rem;
+        padding-left: 15rem;
+        padding-top: 1rem;
     }
 
 
@@ -1105,18 +1118,18 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 14rem;
-        padding-left: 11rem;
+        padding-left: 4rem;
+        padding-top: 1rem;
     }
 
 }
 
 /* Iphone and andriod sizes */
-@media only screen and (min-device-width: 375px) and (max-device-width: 414px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 414px) {
     html {
         height: 100vh;
         overflow: scroll;
@@ -1271,12 +1284,12 @@ p {
         margin-top: 2.5rem;
     }
 
-    .nav-barHowTo {
+    .nav-barHowTo ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-left: 9rem;
-
+        padding-right: 31rem;
+        padding-top: .5rem;
     }
 
 }

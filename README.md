@@ -8,6 +8,7 @@ Live version [_here_](https://itchie1411.github.io/RPLSP/)
 <li> General </li>
 <li> Design </li>
 <li> Pages </li>
+<li> Winning conditions </li>
 <li> Testing and pain points</li>
 <li>Deployment</li>
 
@@ -58,16 +59,36 @@ Both player and bot got the same styles applied. However, only on the players ch
 <h3>Desktop view</h3>
 I created a very simple wiregrapic for both veritcle and horozontal views. 
 <img src="assests/images/wireframe1.JPG" width="600">
-<hr>
+
+<h2>Live view</h2>
+<img src="assests/images/fullscreen_design.JPG" width="600">
 
 <h3>Tablet and phone views</h3>
 <img src="assests/images/wireframe2.JPG" width="300">
+<h2>Live view for phone</h2>
+<img src="assests/images/phone_design.JPG" width="300">
+<h2>Live view for tablet</h2>
+<img src="assests/images/ipad_design.JPG" width="300">
 <hr>
 <h2>Pages</h2>
 There is only 1 other page that needed to be created for the game project, a simple 'How to Play' or 'Rules' page, which is very simply put together by some p and li elements. 
 There is also a simple button that returns the end user back to the main game page. 
 <img src="assests/images/wireframe_page_how_to_play.JPG" width = 700>
+<h2>Live view for the how to play page</h2>
+<img src="assests/images/how_to_play.JPG" width="700">
 <br>
+<hr>
+
+<h3>Winning Conditions</h3>
+Winning conditions are simple. First to 10, wins!. 
+<br>
+The first player or bot, to reach the score of 10 will then prompt a type of game-over pop-up in the form of an alert. This alter will inform the player to who won, either them or the bot. Once the pop-up has been displayed there is only 1 option available to the user to press the OK button, which will then reset and start a new-game. Different messages will appear on player or bot win condition. 
+<h2>Bot winning<h2>
+<img src="assests/images/winning_condition.JPG" width="700">
+<h2>Player winning<h2>
+<img src="assests/images/player_win.JPG" width="700">
+
+<br><br>
 <hr>
 <h2>Testing and pain points</h2>
 Main testing and painpoints where found during the development of the Javascript file. 
@@ -83,8 +104,10 @@ After many hours trying to find which solution on which approach would be best -
 
 The next toughest sections for testing and was soon to be a pain point was to generate a point for either player or bot depending if they won or not. This coencided with my IF loop. I quickly learned after many, mnay trail and errors - that finding the score CLASS from the HTML file within Javascript, I could easily add a +1 to a variable that was assigned the number 0. This then meant that IF a player picked a icon and it beats the bot, (purpose of the IF loop) then +1 to the winner.<br>
 This method of updating the scores also assisted in showing on screen what the player picked and what the BOT picked. This way, I could show why either the bot or player 
-won giving their choice. <hr>
-
+won giving their choice. 
+<br><br>
+Issues where had with the website, amIresponsive.com in which I realised that the site is built for Apple and Apple device resolutions. Personally, I have Andriod and Windows devices. Testing my CSS media queries against this website while testing on andriod devices provide tiresome giving I've had to make on the fly changes to my CSS and add new media queries supporting andriod devices. 
+<hr>
 
 <h2>Further testing</h2>
 </h2> </a>
